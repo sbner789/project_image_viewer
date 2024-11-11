@@ -160,18 +160,6 @@ def create_app(
         except OpenSlideError:
             abort(404)     
     
-    # @app.route('/')
-    # def index() -> str:
-    #     return "Hello, World!"
-    # @app.route('/')
-    # def index() -> str:
-    #     root_dir=_Directory(app.basedir)
-    #     return f"{root_dir}"
-    # @app.route('/')
-    # def index() -> str:
-    #     root_dir=_Directory(app.basedir)
-        
-    #     return jsonify(root_dir.__dict__) 
     @app.route('/')
     def index() -> str:
         return render_template('files.html', root_dir=_Directory(app.basedir))
