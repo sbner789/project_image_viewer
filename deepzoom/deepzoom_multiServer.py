@@ -302,7 +302,7 @@ class _SlideCache:
 
 
 class _Directory:
-    _DEFAULT_RELPATH = PurePath('.')
+    _DEFAULT_RELPATH = PurePath('C:\\Program Files\\testdir')
 
     def __init__(self, basedir: Path, relpath: PurePath = _DEFAULT_RELPATH):
         self.name = relpath.name
